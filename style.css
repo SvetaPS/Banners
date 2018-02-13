@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+}
+#wrapper{
+    max-width: 992px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background: url('79516.jpg') top;
+    background-size: cover;
+}
+
+
+.banner-elem img{
+    width: 150px;
+
+}
+.banner-text-elem {
+    text-align: center;
+    align-self: center;
+}
+.banner-text-elem span{
+    font-size: 26px;
+    font-weight: lighter;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-info{
+    padding-left: 20px;
+}
+.banner-info span{
+    display: block;
+    font-size:12px;
+    font-weight: lighter;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.banner-info .phone-number{
+    font-weight: normal;
+    margin: 15px 0 20px;
+    font-size: 18px;
+}
+.next-btn {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 7px 40px;
+    color: #242424;
+    background:linear-gradient(to bottom,#fefefe  0% ,#938a8a 100%);
+}
+
+
+
+.inst-text {
+    display: block;
+    margin-top: 15px;
+}
+.second-banner-page {
+    overflow: hidden;
+    background: url('puma.jpg') right no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.puma-logo{
+   padding-top: 30px;
+    padding-left: 20px;
+}
+.puma-banner-text{
+
+    align-items: left;
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.puma-banner-text label{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    text-transform: uppercase;
+}
+.discount-5:before{
+    content: '-5%';
+}
+.discount:before{
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+
+    color: #2BFE39;
+    font-size: 80px;
+}
+.discount-10:before{
+    content: '-10%';
+    animation: disk2 0.5s linear;
+}
+.discount-20:before{
+    content: '-20%';
+    animation: disk3 0.5s linear;
+}
+@keyframes disk1 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes disk2 {
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes disk3 {
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.puma-banner-btn {
+    background: transparent;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    color: #fff;width: 130px;
+}
+.banner-elem .puma-btn-active {
+    background: #2BFE39;
+    color: #242424;
+    border-color: transparent;
+    font-weight: bold;
+    letter-spacing: -1px;
+    transition: all 0.5s linear;
+}
+.wifi-btn {
+    display: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #242424;
+    padding: 15px 10px;
+    background: #2BFE39;
+    letter-spacing: -1px;
+}
+.wifi-btn-block {
+    margin-bottom: 50px;
+    padding-left: 20px
+}
+.pre-loader {
+    margin:50px auto;
+    box-sizing:border-box;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:linear-gradient(#2bfe398f -50%, #2bfe392e  60%);
+    animation:roll-r 1s linear infinite;
+}
+.pre-loader-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242424;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.pre-loader>div {
+    padding:5px;
+    animation:roll-l 1s linear infinite;
+}
+.pre-loader>div:after {
+    content:"";
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: #242424;
+}
+
+@keyframes roll-r {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@keyframes roll-l {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
+}
+
+
+
+.inst-text-1:before{
+    content: '# world class ';
+}
+.inst-text:before{
+    position: relative;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #fff;
+    text-transform: uppercase;
+}
+.inst-text-2:before{
+    content: '# sport';
+    animation: inst1 0.5s linear;
+}
+.inst-text-3:before{
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    animation: inst3 0.5s linear;
+    content: url('inst.png');
+}
+.inst-text-3:after{
+    font-weight: normal;
+    content: 'подписывайтесь';
+    animation: inst2 0.5s linear;
+}
+
+@keyframes inst1 {
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes inst2 {
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes inst3 {
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.next-btn-active{
+    background: #FF151E;
+    color: #ffffff;
+    transition: all 0.5s linear;
+}

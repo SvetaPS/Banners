@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <section class="banner-section">
+            <div class="banner-elem " ><img src="logo_nodescriptor.png"></div>
+            <div class="banner-elem banner-text-elem">
+                <span class="inst-text inst-text-1"></span>
+            </div>
+            <div class="banner-elem banner-info">
+                <span >Александр Легков</span>
+                <span>Олимпийский чемпион. Сочи</span>
+                <span class="phone-number">+7 (495) 788-00-00</span>
+                <a href="next-banner.html" class="next-btn" type="button">Далее</a>
+            </div>
+        </section>
+    </div>
+    <div class="pre-loader-block">
+        <div class="pre-loader"><div></div></div>
+    </div>
+    <script>
+        $(document).ready(function($) {
+            setTimeout(function() {
+                $('.pre-loader-block').fadeOut('slow', function() {});
+            }, 1000);
+            setTimeout(function() {
+                $('.inst-text').addClass('inst-text-2');
+                $('.inst-text').removeClass('inst-text-1');
+
+            }, 2000);
+            setTimeout(function() {
+                $('.inst-text').addClass('inst-text-3');
+                $('.inst-text').removeClass('inst-text-2');
+            }, 2800);
+            setTimeout(function() {
+                $('.next-btn').addClass('next-btn-active');
+            }, 3200);
+        });
+    </script>
+
+</body>
+</html>

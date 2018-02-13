@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <section class="banner-section second-banner-page">
+        <div class="banner-elem puma-logo" ><img src="puma-log.png">
+            <div class="puma-banner-text">
+                <label>Сезонная скидка</label>
+                <div>
+                    <span class="discount discount-5"></span>
+                </div>
+                <a href="#" class="puma-banner-btn">Подробнее</a>
+            </div>
+
+        </div>
+
+        <div class="banner-elem wifi-btn-block">
+            <a href="#" class="wifi-btn">Войти в Интернет</a>
+        </div>
+    </section>
+</div>
+<div class="pre-loader-block">
+    <div class="pre-loader"><div></div></div>
+</div>
+</body>
+<script>
+    $(document).ready(function($) {
+       setTimeout(function() {
+                $('.pre-loader-block').fadeOut('slow', function() {});
+        }, 1000);
+
+        setTimeout(function() {
+            $('.discount').addClass('discount-5');
+        }, 1600);
+        setTimeout(function() {
+            $('.discount').addClass('discount-10');
+            $('.discount').removeClass('discount-5');
+
+        }, 2000);
+        setTimeout(function() {
+            $('.discount').addClass('discount-20');
+            $('.discount').removeClass('discount-10');
+        }, 2800);
+        setTimeout(function() {
+            $('.puma-banner-btn').addClass('puma-btn-active');
+        }, 3300);
+        setTimeout(function() {
+            $('.wifi-btn').fadeIn('slow', function() {});
+        }, 4000);
+
+    });
+</script>
+</html>
